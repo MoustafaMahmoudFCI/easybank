@@ -79,6 +79,15 @@ a:hover {
   align-items: center;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
 button,
 .button {
   padding: 0.875rem 2.1875rem;
@@ -89,6 +98,7 @@ button,
   cursor: pointer;
   border: none;
   outline: none;
+  display: inline-block;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -141,7 +151,8 @@ button:hover,
 }
 
 .header nav {
-  padding: 1rem 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .header-logo img {

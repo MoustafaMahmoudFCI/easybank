@@ -31,6 +31,15 @@ a:hover {
     align-items: center;
   }
 }
+.noscroll {
+  overflow: hidden;
+}
+
+//spacing
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
 
 // Buttons
 button,
@@ -43,6 +52,7 @@ button,
   cursor: pointer;
   border: none;
   outline: none;
+  display: inline-block;
   transition: opacity 0.3s ease-in-out;
   &:hover {
     opacity: 0.75;
