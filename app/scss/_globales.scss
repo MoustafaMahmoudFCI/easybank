@@ -21,6 +21,15 @@ a:visited,
 a:hover {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
 // flexbox
 .flex {
   display: flex;
@@ -37,8 +46,34 @@ a:hover {
 
 //spacing
 .container {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  max-width: 71.25rem; // 1140px
+  margin: 0 auto;
+  &-p-all {
+    padding-top: 2.25rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.25rem;
+    padding-left: 1.5rem;
+  }
+  &-px {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  &-py {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  &-pt {
+    padding-top: 2.25rem;
+  }
+  &-pb {
+    padding-bottom: 2.25rem;
+  }
+  &-pl {
+    padding-left: 1.5rem;
+  }
+  &-pr {
+    padding-right: 1.5rem;
+  }
 }
 
 // Buttons
@@ -53,6 +88,7 @@ button,
   border: none;
   outline: none;
   display: inline-block;
+  font-size: $font-sm;
   transition: opacity 0.3s ease-in-out;
   &:hover {
     opacity: 0.75;

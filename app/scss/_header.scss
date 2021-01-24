@@ -17,7 +17,7 @@
   }
   .overlay {
     position: fixed;
-    top: 60px;
+    top: 59px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -27,7 +27,7 @@
   }
   nav {
     padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
   }
   &-logo {
     img {
@@ -61,9 +61,9 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -33px;
+        bottom: -29px;
         height: 5px;
-        background-color: $brightCyan;
+        background: linear-gradient(to right, $limeGreen, $brightCyan);
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
       }
