@@ -70,12 +70,45 @@ a:hover {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h3 {
   margin-top: 0;
+  color: #2d314d;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 1.25rem;
+  }
 }
 
 .flex {
@@ -100,10 +133,17 @@ p {
 }
 
 .container-p-all {
-  padding-top: 2.25rem;
+  padding-top: 4.375rem;
   padding-right: 1.5rem;
-  padding-bottom: 2.25rem;
+  padding-bottom: 4.375rem;
   padding-left: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .container-p-all {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container-px {
@@ -112,16 +152,35 @@ p {
 }
 
 .container-py {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+
+@media (min-width: 992px) {
+  .container-py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container-pt {
-  padding-top: 2.25rem;
+  padding-top: 4.375rem;
+}
+
+@media (min-width: 992px) {
+  .container-pt {
+    padding-top: 6rem;
+  }
 }
 
 .container-pb {
-  padding-bottom: 2.25rem;
+  padding-bottom: 4.375rem;
+}
+
+@media (min-width: 992px) {
+  .container-pb {
+    padding-bottom: 6rem;
+  }
 }
 
 .container-pl {
@@ -362,18 +421,6 @@ button:hover,
   }
 }
 
-.hero-text h1 {
-  color: #2d314d;
-  line-height: 1.2;
-  font-size: 2.2rem;
-}
-
-@media (min-width: 992px) {
-  .hero-text h1 {
-    font-size: 3.25rem;
-  }
-}
-
 .hero-text p {
   line-height: 1.5;
   font-size: 0.875rem;
@@ -383,5 +430,76 @@ button:hover,
   .hero-text p {
     font-size: 1.25rem;
   }
+}
+
+.features {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .features {
+    text-align: left;
+  }
+}
+
+.features-intro {
+  margin-bottom: 3.75rem;
+}
+
+@media (min-width: 992px) {
+  .features-intro {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.features-item {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .features-item {
+    flex: 1 0 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .features-item {
+    flex: 1;
+  }
+}
+
+.features-icon {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .features-icon {
+    margin-bottom: 2rem;
+  }
+}
+
+.features-title {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .features-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.features-description {
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

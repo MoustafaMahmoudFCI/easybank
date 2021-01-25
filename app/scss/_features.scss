@@ -1,0 +1,46 @@
+.features {
+  background-color: $lightGrayBlue;
+  text-align: center;
+  @include breakpoints-up(md) {
+    text-align: left;
+  }
+  &-intro {
+    margin-bottom: 3.75rem;
+    @include breakpoints-up(lg) {
+      max-width: 60%;
+    }
+  }
+  &-grid {
+    @include breakpoints-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &-item {
+    padding: 1rem;
+    @include breakpoints-up(md) {
+      flex: 1 0 50%;
+    }
+    @include breakpoints-up(lg) {
+      flex: 1;
+    }
+  }
+  &-icon {
+    margin-bottom: 1.5rem;
+    @include breakpoints-up(lg) {
+      margin-bottom: 2rem;
+    }
+  }
+  &-title {
+    font-size: $font-med;
+    margin-bottom: 1rem;
+    @include breakpoints-up(lg) {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &-description {
+    font-size: $font-sm;
+    line-height: 1.5;
+  }
+}
