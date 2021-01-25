@@ -70,7 +70,8 @@ a:hover {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin-top: 0;
   color: #2d314d;
   line-height: 1.2;
@@ -421,23 +422,12 @@ button:hover,
   }
 }
 
-.hero-text p {
-  line-height: 1.5;
-  font-size: 0.875rem;
-}
-
-@media (min-width: 992px) {
-  .hero-text p {
-    font-size: 1.25rem;
-  }
-}
-
 .features {
   background-color: #f3f4f6;
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .features {
     text-align: left;
   }
@@ -501,5 +491,83 @@ button:hover,
 .features-description {
   font-size: 0.875rem;
   line-height: 1.5;
+}
+
+.articles {
+  background-color: #fafafa;
+}
+
+.articles h2 {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .articles h2 {
+    text-align: left;
+  }
+}
+
+.articles .article-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .articles .article-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .articles .article-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.articles .article-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.articles .article-item:hover {
+  transform: scale(1.05);
+}
+
+.articles .article-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 12.5rem;
+}
+
+.articles .article-text {
+  padding: 1rem;
+  color: #9698a6;
+}
+
+.articles .article-author {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.articles .article-title {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #2d314d;
+  line-height: 1.2;
+  transition: color 0.3s ease-in-out;
+}
+
+.articles .article-title:hover {
+  color: #31d35c;
+}
+
+.articles .article-summary {
+  font-size: 1rem;
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */

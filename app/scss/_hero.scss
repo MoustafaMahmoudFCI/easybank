@@ -66,13 +66,5 @@
       order: 1;
       text-align: left;
     }
-
-    p {
-      line-height: 1.5;
-      font-size: $font-sm;
-      @include breakpoints-up(lg) {
-        font-size: $font-lg;
-      }
-    }
   }
 }
