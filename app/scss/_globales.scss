@@ -119,6 +119,7 @@ p {
 // Buttons
 button,
 .button {
+  position: relative;
   padding: 0.875rem 2.1875rem;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   color: $white;
@@ -129,9 +130,20 @@ button,
   outline: none;
   display: inline-block;
   font-size: $font-sm;
-  transition: opacity 0.3s ease-in-out;
-  &:hover {
-    opacity: 0.75;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  &:hover::before {
+    opacity: 1;
   }
 }
 
